@@ -8,5 +8,14 @@ stages:
       registry: 127.0.0.1:34029
     when:
       event: {}
+- name: Test
+  steps:
+  - runScriptConfig:
+      image: ada-awa:latest
+      shellScript: make test
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 70
 notification: {}
