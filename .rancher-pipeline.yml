@@ -4,11 +4,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./docker/Dockerfile
       buildContext: .
-      tag: ada-awa
+      tag: ada-awa:latest
       registry: 127.0.0.1:34029
     when:
-      event:
-        include:
-        - push
+      event: {}
 timeout: 60
 notification: {}
