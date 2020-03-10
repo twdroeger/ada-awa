@@ -7,7 +7,5 @@ stages:
       tag: ada-awa:latest
       pushRemote: true
       registry: 127.0.0.1:34029
-    when:
-      event: {}
 timeout: 100
 notification: {}
