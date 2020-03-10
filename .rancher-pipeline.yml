@@ -5,7 +5,6 @@ stages:
       dockerfilePath: ./docker/Dockerfile
       buildContext: .
       tag: ada-awa:latest
-      pushRemote: true
       registry: 127.0.0.1:34029
 timeout: 100
 notification: {}
