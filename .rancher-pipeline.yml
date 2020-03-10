@@ -13,9 +13,5 @@ stages:
   - runScriptConfig:
       image: twdroeger/ada-awa:latest
       shellScript: make test
-- name: Deploy
-  steps:
-  - applyYamlConfig:
-      path: ./deployment.yaml
 timeout: 100
 notification: {}
