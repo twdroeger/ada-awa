@@ -6,5 +6,10 @@ stages:
       buildContext: .
       tag: ada-awa:latest
       registry: 127.0.0.1:34029
+- name: Test
+  steps:
+  - runScriptConfig:
+      image: ada-awa:latest
+      shellScript: make test
 timeout: 100
 notification: {}
